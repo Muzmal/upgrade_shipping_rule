@@ -4,6 +4,7 @@ app_publisher = "Zaviago"
 app_description = "Add new options in shipping rule"
 app_email = "muzammal.rasool1079@gmail.com"
 app_license = "mit"
+from upgrade_shipping_rule import CustomShippingRule
 # required_apps = []
 
 # Includes in <head>
@@ -114,9 +115,9 @@ app_license = "mit"
 # ---------------
 # Override standard doctype classes
 
-# override_doctype_class = {
-# 	"ToDo": "custom_app.overrides.CustomToDo"
-# }
+override_doctype_class = {
+	"Shipping Rule": "upgrade_shipping_rule.CustomShippingRule.CustomShippingRule"
+}
 
 # Document Events
 # ---------------
@@ -160,7 +161,7 @@ app_license = "mit"
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "upgrade_shipping_rule.event.get_events"
+# 	"erpnext.erpnext.controllers.accounts_controller.apply_shipping_rule": "upgrade_shipping_rule.shipping_rule_settings.overRiddenapplyShippingRule"
 # }
 #
 # each overriding function accepts a `data` argument;

@@ -1,0 +1,54 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-01-25 12:44:38.917237",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "shipping_rule_settings_section",
+  "quantity_based_shipping_for_shipping_rules",
+  "exclude_cities"
+ ],
+ "fields": [
+  {
+   "fieldname": "shipping_rule_settings_section",
+   "fieldtype": "Section Break",
+   "label": "Shipping Rule Settings"
+  },
+  {
+   "fieldname": "quantity_based_shipping_for_shipping_rules",
+   "fieldtype": "Table",
+   "label": "Quantity Based Shipping For Shipping Rules",
+   "options": "Quantity Based Shipping Rules"
+  },
+  {
+   "fieldname": "exclude_cities",
+   "fieldtype": "Table",
+   "label": "Exclude Cities",
+   "options": "Excluded Cities from Shipping Rules"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-01-30 19:33:59.003937",
+ "modified_by": "Administrator",
+ "module": "Upgrade Shipping Rule",
+ "name": "Shipping Rule Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
